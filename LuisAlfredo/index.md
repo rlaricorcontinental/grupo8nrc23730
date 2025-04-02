@@ -1,6 +1,6 @@
 ---
-layout: tm638231-default
-title: Cryssander Jaime Riascos Santiago
+theme: jekyll-theme-merlot
+title: Lui Alfredo Tisoc Pimentel
 ---
 
 # ¡Bienvenido a mi portafolio!
