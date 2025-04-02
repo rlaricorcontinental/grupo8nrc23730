@@ -1,0 +1,53 @@
+/* fluent.css */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f2f1;
+    color: #323130;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #0078d4;
+    color: #ffffff;
+    padding: 12px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 80px auto 40px; /* Espacio superior para que no se solape con header fijo si se llega a usar */
+}
+
+footer {
+    background-color: #f3f2f1;
+    color: #323130;
+    text-align: center;
+    padding: 12px 20px;
+    border-top: 1px solid #e1dfdd;
+    margin-top: 40px;
+}
