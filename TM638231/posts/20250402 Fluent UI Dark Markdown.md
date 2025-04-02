@@ -14,6 +14,7 @@ Fluent UI es el lenguaje de diseño moderno de Microsoft, caracterizado por su e
 En este proyecto, se diseñó un **tema oscuro inspirado en Fluent UI**, adaptado para ser utilizado en sitios generados con **Jekyll y Markdown**, sin necesidad de librerías externas ni JavaScript adicional.
 
 ---
+
 ## 1. Objetivo del Estilo
 El objetivo es replicar la sensación de **Fluent UI**:
 
