@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/grupo8nrc23730/assets/css/fluentui-dark.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile">
+                <img src="/assets/img/perfil.jpg" alt="Foto de perfil" class="profile-pic">
+                <div class="info">
+                    <h1>{{ page.name }}</h1>
+                    <p>{{ page.description }}</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="projects">
+        <h2>Proyectos</h2>
+        <div class="grid">
+            <div class="card">Desarrollo</div>
+            <div class="card">Educación</div>
+            <div class="card">Hardening</div>
+        </div>
+    </section>
+    <footer>
+        <div class="contact">
+            <div class="item">📱 {{ page.phone }}</div>
+            <div class="item">✉️ {{ page.email }}</div>
+            <div class="item">🎓 {{ page.education }}</div>
+            <div class="item">🏆 {{ page.certifications }}</div>
+        </div>
+    </footer>
+</body>
+</html>
