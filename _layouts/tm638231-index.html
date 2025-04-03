@@ -17,14 +17,15 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
             margin: 20px;
+            align-items: center;
         }
         .card {
             padding: 20px;
             text-align: center;
         }
         .profile-pic {
-            width: 300px;
-            height: 300px;
+            width: 150px;
+            height: 150px;
             object-fit: cover;
             border-radius: 25%;
         }
@@ -34,17 +35,13 @@
     {% include tm638231-header.html %}
     <section class="perfil">
         <div class="grid-container3">
-            <img src="/grupo8nrc23730/TM638231/perfil.jpg" alt="Foto de perfil" class="profile-pic">
+            <div style="grid-row: span 2";>
+                <img src="/grupo8nrc23730/TM638231/perfil.jpg" alt="Foto de perfil" class="profile-pic">
+                <p>{{ page.presentacion }}</p>
+            </div>
             <div style="grid-column: span 2;">
                 <h1>{{ page.nombre }}</h1>
                 <p>{{ page.descripcion }}</p>
-            </div>
-        </div>
-    </section>
-    <section class="contacto">
-        <div class="grid-container3">
-            <div>
-                <p>{{ page.presentacion }}</p>
             </div>
             <div>
                 <h2>Educación</h2>
