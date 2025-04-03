@@ -12,4 +12,4 @@ El objetivo es replicar la sensación de **Fluent UI**:
 - Mejorando estilos de **código (**`**, **`**) y tablas**.
 - Sin perder rendimiento en la carga del **portafolio**.
 
-**[Ver Proyecto](/posts/20250402-Fluent-UI-Dark-Markdown.md)**
+**[Ver Proyecto](/posts/Fluent-UI-Dark-Markdown.md)**
