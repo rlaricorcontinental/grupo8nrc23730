@@ -7,4 +7,4 @@ title: UC ConSof G 8 NRC 23730
 Portafolios central.
 
 [Cryssander Riascos](TM638231/index.md)
-[Alfredo Tisoc](LuisAlfredo/index.md)
+[Alfredo Tisoc](AlfredoTisoc/index.html)
