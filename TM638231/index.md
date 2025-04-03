@@ -7,3 +7,4 @@ title: Cryssander Jaime Riascos Santiago
 Este es un sitio web donde muestro mis proyectos.
 
 Por desarrollar
+[Beta](index2)
