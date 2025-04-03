@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tm638231-index
 title: "Mi Portafolio"
 name: "Tu Nombre"
 description: "Desarrollador, Educador y Especialista en Seguridad"
