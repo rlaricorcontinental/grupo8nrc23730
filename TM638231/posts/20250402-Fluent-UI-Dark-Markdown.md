@@ -15,11 +15,11 @@ En este proyecto, se diseñó un **tema oscuro inspirado en Fluent UI**, adaptad
 
 ## 1. Objetivo del Estilo
 El objetivo es replicar la sensación de **Fluent UI**:
-Respetando la **tipografía "Segoe UI"**.\
-Manteniendo un **modo oscuro accesible**.\
-Incluyendo **botones, tarjetas y enlaces con efectos suaves**.\
-Mejorando estilos de **código (**`**, **`**) y tablas**.
-Sin perder rendimiento en la carga del **portafolio**.
+- Respetando la **tipografía "Segoe UI"**.\
+- Manteniendo un **modo oscuro accesible**.\
+- Incluyendo **botones, tarjetas y enlaces con efectos suaves**.\
+- Mejorando estilos de **código (**`**, **`**) y tablas**.
+- Sin perder rendimiento en la carga del **portafolio**.
 
 ## 2. Estructura del Archivo CSS
 El archivo `fluent-dark.css` contiene:
