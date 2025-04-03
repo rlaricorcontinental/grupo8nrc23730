@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/grupo8nrc23730/assets/css/fluentui-dark.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+    </style>
 </head>
 <body>
     {% include tm638231-header.html %}
@@ -17,17 +24,11 @@
     </section>
     <section class="projects">
         <h2>Proyectos</h2>
-        <ul>
-          <li style="display: inline-block; width: 33%;">
-              <div class="card">Desarrollo</div>
-          </li>
-          <li style="display: inline-block; width: 33%;">
-              <div class="card">Educación</div>
-          </li>
-            <li style="display: inline-block; width: 33%;">
-              <div class="card">Hardening</div>
-          </li>
-        </ul>
+        <div class="grid-container">
+            <div class="card">Desarrollo</div>
+            <div class="card">Educación</div>
+            <div class="card">Hardening</div>
+        </div>
     </section>
     <section class="contact">
         <ul>
