@@ -1,11 +1,11 @@
 ---
 layout: tm638231-index
 title: "Mi Portafolio"
-name: "Tu Nombre"
+name: "Cryssander Jaime Riascos Santiago"
 description: "Desarrollador, Educador y Especialista en Seguridad"
-phone: "+XX XXXX XXXX"
-email: "correo@ejemplo.com"
-education: "Ingeniería en Sistemas"
+phone: "+51 966180740"
+email: "tm638231@continental.edu.pe"
+education: "Ingeniería en Sistemas e Informática"
 certifications: "Certificación XYZ"
 ---
 
