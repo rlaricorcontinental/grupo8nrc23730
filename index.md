@@ -1,11 +1,26 @@
 ---
 layout: default
-title: UC ConSof G 8 NRC 23730
+title: UC ConSof G8 NRC 23730
 ---
 
-# ¡Bienvenidos!
-Portafolios central.
+# 👋 ¡Bienvenidos!
+Bienvenidos al portafolio central del grupo **UC ConSof G8 - NRC 23730**.
 
-[Cryssander Riascos](TM638231/index.md)
-[Alfredo Tisoc](AlfredoTisoc/index.html)
-[Harold Salazar](Harold_Salazar/index.html)
+Aquí encontrarás los proyectos individuales de los integrantes del grupo.
+
+---
+
+## 👨‍💻 Integrantes
+
+### 🔹 Cryssander Riascos
+[🔗 Ver portafolio](TM638231/index.md)
+
+---
+
+### 🔹 Alfredo Tisoc
+[🔗 Ver portafolio](AlfredoTisoc/index.html)
+
+---
+
+### 🔹 Harold Salazar
+[🔗 Ver portafolio](Harold_Salazar/index.html)
