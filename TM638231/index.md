@@ -10,19 +10,13 @@ tituloactual: "Técnico Auxiliar en Sistemas Informáticos"
 tituloproximo: "Ingeniero en Sistemas e Informática"
 ---
 
-{% capture card1 %}
-### De Desarrollo
+{% capture card1 %}### De Desarrollo
 - [Creación de Fluent UI Dark CSS para Markdown](/posts/Fluent-UI-Dark-Markdown.md)
-**[Más Proyectos](/development.md)**
-{% endcapture %}
+**[Más Proyectos](/development.md)**{% endcapture %}
 
-{% capture card2 %}
-### De Educación
+{% capture card2 %}### De Educación
 - [Modelado de una Ciudad en 3D](/posts/Modelado-Ciudad-3D.md)
-**[Más Proyectos](education.md)**
-{% endcapture %}
+**[Más Proyectos](education.md)**{% endcapture %}
 
-{% capture card3 %}
-### De Hardening
-Proyectos en desarrollo...
-{% endcapture %}
+{% capture card3 %}### De Hardening
+Proyectos en desarrollo...{% endcapture %}
