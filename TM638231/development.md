@@ -5,6 +5,7 @@ title: De Desarrollo
 # Proyectos de Desarrollo
 
 ## Creación de Fluent UI Dark CSS para Markdown
+
 El objetivo es replicar la sensación de **Fluent UI**:
 - Respetando la **tipografía "Segoe UI"**.\
 - Manteniendo un **modo oscuro accesible**.\
