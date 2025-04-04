@@ -6,4 +6,4 @@ title: De Educación
 
 ## Modelado de una Ciudad en 3D
 
-**[Ver Proyecto](posts/Modelado-Ciudad-3D)**
+**[Ver Proyecto](/posts/Modelado-Ciudad-3D)**
