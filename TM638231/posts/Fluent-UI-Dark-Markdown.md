@@ -1,12 +1,12 @@
 ---
 layout: tm638231-posts
 title: Creación de Fluent UI Dark CSS para Markdown
-fechapublicacion: 2025-04-02"
-categoria: "Desarrollo"
+fechapublicacion: 2025-04-02
+categoria: Desarrollo
 fechapublicacion: 2025-04-02
 fechamodificacion: 2025-04-03
 etiquetas: CSS, Fluent UI, Markdown
-description: "Explicación del proceso para diseñar un CSS basado en Fluent UI en modo oscuro."
+description: Explicación del proceso para diseñar un CSS basado en Fluent UI en modo oscuro.
 ---
 
 # Creación de Fluent UI Dark CSS para Markdown
