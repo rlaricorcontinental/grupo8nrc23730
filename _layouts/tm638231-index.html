@@ -56,13 +56,13 @@
             <h2>Proyectos</h2>
         </div>
         <div class="card">
-            {{ card1 | markdownify }}
+            {{ page.card1 | markdownify }}
         </div>
         <div class="card">
-            <section>{{ card2 | markdownify }}</section>
+            {{ page.card2 | markdownify }}
         </div>
         <div class="card">
-            <section>{{ card3 | markdownify }}</section>
+            {{ page.card3 | markdownify }}
         </div>
     </div>
     {% include tm638231-footer.html %}
