@@ -8,3 +8,4 @@ Portafolios central.
 
 [Cryssander Riascos](TM638231/index.md)
 [Alfredo Tisoc](AlfredoTisoc/index.html)
+[Harold Salazar](Harold_Salazar/index.html)
