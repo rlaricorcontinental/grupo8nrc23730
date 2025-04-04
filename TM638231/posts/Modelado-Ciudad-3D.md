@@ -1,11 +1,11 @@
 ---
-layout: tm638231-default
+layout: tm638231-posts
 title: Modelado de una Ciudad en 3D
-date: 2025-04-02
-author: Cryssander Riascos
-categories: [Educación, 3D]
-tags: [Educación, 3D]
-description: "Explicación del proceso para diseñar en secundaria una ciudad en 3D."
+descripcion: Explicación del proceso para diseñar en secundaria una ciudad en 3D.
+categoria: Educación
+fechapublicacion: 2025-04-02
+fechamodificacion: 2025-04-03
+etiquetas: Modelado, 3D, Secundaria, Diseños
 ---
 
 # Modelado de una Ciudad en 3D
