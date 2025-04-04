@@ -12,14 +12,14 @@ tituloproximo: "Ingeniero en Sistemas e Informática"
 card1: |
   ### De Desarrollo
   
-  [Creación de Fluent UI Dark CSS para Markdown](posts/Fluent-UI-Dark-Markdown.md)
+  [Creación de Fluent UI Dark CSS para Markdown](posts/Fluent-UI-Dark-Markdown)
     
   **[Más Proyectos](development)**
 
 card2: |
   ### De Educación
   
-  [Modelado de una Ciudad en 3D](posts/Modelado-Ciudad-3D.md)
+  [Modelado de una Ciudad en 3D](posts/Modelado-Ciudad-3D)
   
   **[Más Proyectos](education)**
 
