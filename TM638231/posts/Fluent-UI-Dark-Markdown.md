@@ -1,10 +1,11 @@
 ---
-layout: tm638231-default
+layout: tm638231-posts
 title: Creación de Fluent UI Dark CSS para Markdown
-date: 2025-04-02
-author: Cryssander Riascos
-categories: [CSS, Fluent UI, Markdown]
-tags: [CSS, Fluent UI, Jekyll, Markdown]
+fechapublicacion: 2025-04-02"
+categoria: "Desarrollo"
+fechapublicacion: 2025-04-02
+fechamodificacion: 2025-04-03
+etiquetas: CSS, Fluent UI, Markdown
 description: "Explicación del proceso para diseñar un CSS basado en Fluent UI en modo oscuro."
 ---
 
@@ -14,6 +15,7 @@ Fluent UI es el lenguaje de diseño moderno de Microsoft, caracterizado por su e
 En este proyecto, se diseñó un **tema oscuro inspirado en Fluent UI**, adaptado para ser utilizado en sitios generados con **Jekyll y Markdown**, sin necesidad de librerías externas ni JavaScript adicional.
 
 ## 1. Objetivo del Estilo
+
 El objetivo es replicar la sensación de **Fluent UI**:
 - Respetando la **tipografía "Segoe UI"**.\
 - Manteniendo un **modo oscuro accesible**.\
@@ -22,8 +24,11 @@ El objetivo es replicar la sensación de **Fluent UI**:
 - Sin perder rendimiento en la carga del **portafolio**.
 
 ## 2. Estructura del Archivo CSS
+
 El archivo `fluent-dark.css` contiene:
+
 ### **1. Estilos Base**
+
 ```css
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -34,7 +39,9 @@ body {
     line-height: 1.6;
 }
 ```
+
 ### **2. Barra de Navegación**
+
 ```css
 nav {
     background-color: #005a9e;
@@ -43,7 +50,9 @@ nav {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 ```
+
 ### **3. Botones**
+
 ```css
 button, .btn {
     background-color: #0078d4;
@@ -60,7 +69,9 @@ button:hover {
     transform: scale(1.03);
 }
 ```
+
 ### **4. Tablas**
+
 ```css
 table {
     width: 100%;
@@ -78,16 +89,24 @@ th {
 ```
 
 ## Implementación en Jekyll
+
 Para aplicar este CSS a todo el sitio, primero el archivo `fluent-dark.css` se debe guardar en `_assets/css/`
 Luego, se debe incluir en el head de los archivos html de los que corresponda:
 Por defecto en `_layouts/default.html`.
 Implementado actualmente en `_layouts/tm638231-default.html`.
+
 ```html
 <link rel="stylesheet" href="/assets/css/fluent-dark.css">
 ```
+
 ## Resultado Final
+
 Al aplicar lo anterior, este portafolio obtiene un estilo similar a Fluent UI siendo desarrollado en MarkDown.
+
 ### **Conclusión**
+
 Al ser un estilo basado en **Fluent UI** brinda una experiencia visual limpia y moderna. Además que al no utilizar librerías externas ni javascript adicional permite una navegación fluida en el entorno MarkDown sin afectar el rendimiento.
+
 ### **Planes Futuros**
+
 En el futuro quisiera agregar **modo claro/oscuro dinámico**.
