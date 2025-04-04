@@ -20,10 +20,6 @@
           margin: 20px;
           align-items: stretch;
       }
-      .card {
-          padding: 10px;
-          /* -- text-align: center; */
-      }
       .profile-pic {
           width: 100%;
           max-width: 250px;
@@ -40,23 +36,19 @@
     {% include tm638231-header.html %}
     <main>
       {{ content }}
-    </main>
-    <aside>
       <div class="grid-container-3-fijo">
         <div>
-          <h5>Categoría</h5>
-          <p>{{ page.categoria }}</p>
+          <p>*Categoría*: {{ page.categoria }}</p>
         </div>
         <div>
-          <h5>Etiquetas</h5>
-          <p>{{ page.etiquetas }}</p>
+          <p>Etiquetas: {{ page.etiquetas }}</p>
         </div>
         <div>
           <p>F. Publicado: page.fechapublicado</p>
           <p>F. Modificado: page.fechamodificado</p>
         </div>
       </div>
-    </aside>
+    </main>
     {% include tm638231-footer.html %}
   </body>
 </html>
