@@ -3,7 +3,7 @@
 
 - 🔭 estoy trabajando como estadistico **en un Establecimiento de Salud**
 
-- 👨‍💻 Puedes visitar Linkedln [www.linkedin.com/in/percy-frank-alama-herrera-98a019332](www.linkedin.com/in/percy-frank-alama-herrera-98a019332)
+- 👨‍💻 Puedes visitar Linkedln [https://www.linkedin.com/in/percy-frank-alama-herrera-98a019332](www.linkedin.com/in/percy-frank-alama-herrera-98a019332)
 
 - 📫 Escribeme a **alamaherrera@gmail.com**
 
