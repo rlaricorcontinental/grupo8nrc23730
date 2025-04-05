@@ -24,3 +24,6 @@ Aquí encontrarás los proyectos individuales de los integrantes del grupo.
 
 ### 🔹 Harold Salazar
 [🔗 Ver portafolio](Harold_Salazar/index.html)
+
+### 🔹 Raul Larico
+[🔗 Ver portafolio](rlaricor/index.md)
