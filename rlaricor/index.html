@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raul Larico - Portafolio Personal</title>
+    <style>
+        :root {
+            --primary-color: #60a5fa;
+            --text-color: #e5e7eb;
+            --bg-color: #111827;
+            --card-bg: #1f2937;
+            --hover-color: #3b82f6;
+            --border-color: #374151;
+            --secondary-text: #9ca3af;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: var(--secondary-text);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+        .project-card {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .project-card:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .project-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 1rem 0;
+            background-color: var(--border-color);
+        }
+
+        .tech-stack {
+            color: var(--secondary-text);
+            margin: 1rem 0;
+            font-style: italic;
+        }
+
+        .about-me {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .contact-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--primary-color);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link:hover {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            color: var(--secondary-text);
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>👨‍💻 Mi Portafolio de Proyectos</h1>
+        <p>¡Bienvenido(a) a mi portafolio! Aquí encontrarás una selección de mis proyectos de programación, cada uno con una breve descripción y una imagen representativa.</p>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>🚀 Proyectos Destacados</h2>
+            
+            <div class="project-card">
+                <h3>📱 Api que consume webservices de la ONGEI</h3>
+                <img src="https://via.placeholder.com/800x400?text=Task+App" alt="Api ONGEI" class="project-image">
+                <p class="tech-stack">Tecnologías: PHP, Laravel</p>
+                <p>Una api que consume los servicios publicados por la ONGEI.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>🗺️ App Móvil de consulta para la Subgerencia de Transporte Urbano</h3>
+                <img src="https://via.placeholder.com/800x400?text=Seguridad+Ciudadana" alt="SGTSV APP" class="project-image">
+                <p class="tech-stack">Tecnologías: Php, Laravel, Javascript, Vuejs, Capacitorjs</p>
+                <p>Plataforma que permite la consulta de datos de las tarjetas de circulación, credenciales de conductor, récord de papeletas locales y nacionales, consulta básica de DNI del sistema de transportes de la Municipalidad Provincial Mariscal Nieto.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>📊 Sistema de ingreso de fichas de mantenimiento - POSEIDON</h3>
+                <img src="https://via.placeholder.com/800x400?text=Dashboard+Ventas" alt="Dashboard" class="project-image">
+                <p class="tech-stack">Tecnologías: Php, Laravel, Javascript, Vue.js, Chart.js, OpenLayers, Postgresql</p>
+                <p>Plataforma Web y móvil para ingreso de fichas de mantenimiento de la EPS Moquegua. Este sistema cuenta con una sección web dirigido a la jefatura del área en el cual podrá gestionar trabajadores, categorias, datos de tablas generales. Además permite la integración con la base de datos espacial de la entidad para la consulta de elementos georeferenciados como tuberías, válvulas, grifos contra incendio, etc.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>🧠 Aplicativo web de consultas para sistema de administración tributaria</h3>
+                <img src="https://via.placeholder.com/800x400?text=Chatbot+Tr%C3%A1mites" alt="Chatbot" class="project-image">
+                <p class="tech-stack">Tecnologías: Javascript, Nodejs, Express, Vuejs</p>
+                <p>Aplicativo PWA que permite la consulta de información del Sistema de Administración Tributaria de la Municipalidad Distrital de Samegua.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>👤 Sobre mí</h2>
+            <div class="about-me">
+                <div>
+                    <p>Hola, mi nombre es Raul Larico, soy un desarrollador apasionado por crear soluciones útiles, eficientes. Me interesa el desarrollo <strong>full stack</strong>. Disfruto aprender cosas nuevas y enfrentar desafíos técnicos.</p>
+                    
+                    <div style="margin-top: 2rem;">
+                        <p><strong>💼 Especialidades:</strong> JavaScript, Node.js, PHP, Flutter, PostgreSQL, Docker</p>
+                        <p><strong>📍 Ubicación:</strong> Moquegua - Perú</p>
+                        <p><strong>📧 Email:</strong> <a href="mailto:44727143@continental.edu.pe" class="contact-link">44727143@continental.edu.pe</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📫 ¿Quieres contactarme?</h2>
+            <p>Estoy abierto a colaboraciones, proyectos freelance o simplemente una buena conversación tech.</p>
+            <div class="contact-links">
+                <a href="https://linkedin.com/in/rlaricor" class="contact-link">LinkedIn</a>
+                <a href="https://twitter.com/rlaricor" class="contact-link">Twitter</a>
+                <a href="https://github.com/rlaricor" class="contact-link">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Gracias por visitar mi portafolio. ¡Espero que encuentres algo que te inspire!</p>
+    </footer>
+</body>
+</html> 
