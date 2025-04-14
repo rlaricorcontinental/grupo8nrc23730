@@ -1,0 +1,30 @@
+<html>
+<meta charset="utf-8">
+
+      <head>
+           <img src="percy.jpg" heigth="30%" width="100%"/>
+           <h1 style="color:#FF4C29;" align="center">Percy Frank Alama Herrera</h1>
+             <br/><br/>
+           <img src="percy2.jpg" heigth="30%" width="25%" align="left"/>
+      </head>
+      <body style="background-color:#334756;">
+            <h2 style="color:#FF4C29;" align="center">Sobre Mi</h2>
+            <p style="color:white;" align="right"> Hola, soy Percy Frank Alama Herrera estudiante de la carrera de ingenieria de sistemas.
+             Actualmente trabajo en un Establecimiento de Salud del Minsa  ocupando el puesto de Estadistico de dicho establecimiento con mas 12 años de experiencia laboral.
+Encargado de la creacion de informes estadisticos.</p>
+              <br/>
+            <h2 style="color:#FF4C29;" align="center">Contacto</h2>
+            <p style="color:#FF4C29;">Email: <a style="color:white;" href="mailto:alamaherrera@gmail.com"> alamaherrera@gmail.com</a></p>
+             <p style="color:#FF4C29;">Direccion: <a style="color:white;"morropon- piura">Morropon-Piura</a></p>
+            <p style="color:#FF4C29;">Telefono: <a style="color:white;"+(51)942 943 244">+(51)942 943 244</a></p>
+            <p style="color:#FF4C29;">Linkedin: <a style="color:white;" href="mailto:https://www.linkedin.com/in/percy-frank-alama-herrera-98a019332/"> https://www.linkedin.com/in/percy-frank-alama-herrera-98a019332/</a></p>
+                        <br/><br/><br/>
+      </body>
+      <footer>
+             <p style="color:#FF4C29;">Hecho por Percy</p>
+             <p style="color:#FF4C29;">Email: <a style="color:white;" href="mailto:alamaherrera@gmail.com"> alamaherrera@gmail.com</a></p>
+      </footer>
+
+
+
+</html> 
