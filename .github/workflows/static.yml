@@ -39,9 +39,9 @@ jobs:
         run: |
           find . -name "*.html" | while read file; do
             if grep -q "<title>" "$file"; then
-              sed -i 's|<title>.*</title>|<title>Mi sitio personalizado</title>|' "$file"
+              sed -i 's|<title>.*</title>|<title>UC ConSof G8 NRC 23730</title>|' "$file"
             else
-              sed -i '/<head>/a <title>Mi sitio personalizado</title>' "$file"
+              sed -i '/<head>/a <title>UC ConSof G8 NRC 23730</title>' "$file"
             fi
           done
 
