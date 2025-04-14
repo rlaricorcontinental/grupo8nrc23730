@@ -31,13 +31,25 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Upload artifact
+
+      - name: Añadir o reemplazar etiqueta <title>
+        run: |
+          find . -name "*.html" | while read file; do
+            if grep -q "<title>" "$file"; then
+              sed -i 's|<title>.*</title>|<title>UC ConSof G8 NRC 23730</title>|' "$file"
+            else
+              sed -i '/<head>/a <title>UC ConSof G8 NRC 23730</title>' "$file"
+            fi
+          done
+
+      - name: Upload HTML files
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
           path: '.'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
