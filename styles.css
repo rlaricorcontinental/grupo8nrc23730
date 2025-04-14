@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+h1,
+h2 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.perfil-img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.redes a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px 12px;
+    background: #333;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.redes a:hover {
+    background: #ff7043;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contenedor {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+    margin-bottom: 25px;
+    width: 90%;
+    text-align: center;
+}
+
+#habilidades .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 15px 0;
+}
+
+.skill i {
+    font-size: 40px;
+    margin-right: 15px;
+    color: #ff5722;
+    animation: bounce 1.5s infinite alternate;
+}
+
+.barra {
+    width: 60%;
+    height: 8px;
+    background: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.progreso {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 1.5s ease;
+}
+
+.js {
+    width: 90%;
+    background: #f7df1e;
+}
+
+.python {
+    width: 85%;
+    background: #306998;
+}
+
+.htmlcss {
+    width: 95%;
+    background: #e34c26;
+}
+
+.react {
+    width: 80%;
+    background: #61dafb;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.proyecto {
+    width: 320px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.proyecto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.btn {
+    padding: 12px 24px;
+    background: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #ff784e;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+/* Estilos para el "botón" de Videojuegos */
+#Videojuegos .boton-desplegable {
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+/* Estilos para ocultar los detalles de Videojuegos inicialmente */
+#contenido-Videojuegos {
+    display: none;
+    overflow: hidden;
+}
+
+/* Opcional: Estilo para el indicador de desplegable (el signo "+") */
+#Videojuegos .boton-desplegable::after {
+    content: '+';
+    float: right;
+    margin-left: 5px;
+}
+
+/* Opcional: Estilo para el indicador cuando está desplegado (el signo "-") */
+#Videojuegos .boton-desplegado::after {
+    content: '-';
+}
+
+/* Estilos para el "botón" de Videojuegos y su contenedor */
+#Videojuegos .contenedor > h2.boton-desplegable {
+    display: inline-block; /* Para que ocupe solo el ancho de su contenido y la imagen pueda estar a su lado */
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 10px;
+    margin-right: 10px; /* Espacio entre el texto y el icono */
+}
+
+/* Estilos para el icono de Videojuegos */
+.icono-videojuegos {
+    width: 30px; /* Ajusta el tamaño del icono */
+    height: auto;
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+    animation: bounceVertical 1s infinite alternate; /* Aplica la animación */
+}
+
+/* Keyframes para la animación vertical de rebote (si no los tienes ya) */
+@keyframes bounceVertical {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); /* Ajusta la distancia del rebote */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* El resto de tu CSS para la sección de Videojuegos y las imágenes de los rangos se mantiene igual */
+
+
+/* Ocultar los detalles específicos de cada item de videojuego */
+.detalles-videojuego {
+    display: none;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #ccc;
+    /* Un color más suave para los detalles */
+}
+
+/* Mostrar los detalles cuando el contenido de videojuegos está visible */
+#contenido-Videojuegos.mostrar-detalles .detalles-videojuego {
+    display: block;
+}
+
+
+
+/* Estilos para las imágenes principales de los videojuegos */
+#contenido-Videojuegos .Videojuegos-item > img { /* Usamos el selector de hijo directo */
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: none; /* Removemos cualquier animación aplicada directamente a estas imágenes */
+}
+
+/* Estilos para el contenedor del rango y la imagen */
+.rango-videojuego-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* ¡Aquí está el cambio para centrar! */
+    margin-bottom: 5px;
+}
+
+/* Estilos para las imágenes del rango */
+.rango-videojuego-container img {
+    width: 50px; /* Tamaño para las imágenes de los rangos */
+    height: auto;
+    margin-left: 10px;
+    vertical-align: middle;
+    animation: bounceVertical 1s infinite alternate; /* Mantenemos la animación */
+}
+
+/* Ajustes para el texto del rango */
+.rango-videojuego-container p.rango-videojuego {
+    margin-bottom: 0;
+    margin-right: 5px;
+}
