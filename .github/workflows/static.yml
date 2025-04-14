@@ -35,7 +35,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Add or Replace HTML <title> in all files
+      - name: Añadir o reemplazar etiqueta <title>
         run: |
           find . -name "*.html" | while read file; do
             if grep -q "<title>" "$file"; then
@@ -48,7 +48,7 @@ jobs:
       - name: Upload HTML files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # Sube toda la raíz (y subcarpetas)
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
