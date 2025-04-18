@@ -1,4 +1,4 @@
-// Configuración de Firebase (reemplaza con tu configuración real)
+// Configuración de Firebase
 const firebaseConfig = {
     apiKey: "AIzaSyAkV2EhjdbpWQ_B4lpAcAqYkGvwl8u2zm4",
     authDomain: "portafolio-uc.firebaseapp.com",
