@@ -9,20 +9,24 @@
 <body class="login-body">
 
   <div class="login-container">
-    <h2>Iniciar Sesión</h2>
+    <h2>Acceder</h2>
     <form id="loginForm">
-      <input type="email" id="email" placeholder="Correo electrónico" required />
-      <input type="password" id="password" placeholder="Contraseña" required />
-      <button type="submit">Entrar</button>
+      <input type="email" id="email" placeholder="🧑‍💻 Correo electrónico" required />
+      <input type="password" id="password" placeholder="🔑 Contraseña" required />
+      <button type="submit">✅ Acceder</button>
       <div id="error" class="error"></div>
     </form>
+    <a href="index.html">
+      <button>⬅️ Cancelar</button>
+    </a>
   </div>
 
-  <!-- Firebase SDK (compat) -->
+  <!-- Firebase SDK -->
   <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
 
-  <!-- Lógica de autenticación -->
+  <!-- Scripts separados -->
+  <script src="assets/js/firebase-config.js"></script>
   <script src="assets/js/login.js"></script>
 </body>
 </html>

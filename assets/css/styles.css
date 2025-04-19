@@ -2,7 +2,7 @@
     --primary-color: #2563eb;
     --primary-hover: #1d4ed8;
     --text-color: #1f2937;
-    --bg-color: #ffffff;
+    --bg-color: #f3f4f6;
     --card-bg: #f9fafb;
     --border-radius: 12px;
   }
@@ -128,7 +128,7 @@
   
   /* ==== LOGIN STYLES ==== */
 .login-container {
-    background: var(--bg-color);
+    background: #f9f9f9;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -173,8 +173,7 @@
 }
 
 .login-body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: #f4f4f4;
+    background: var(--bg-color);
     display: flex;
     height: 100vh;
     justify-content: center;
