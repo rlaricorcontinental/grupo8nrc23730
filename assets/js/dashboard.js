@@ -7,7 +7,7 @@ auth.onAuthStateChanged(user => {
     console.log("Sesión activa ", user.email);
     cargarUsuario(user.uid);
   } else {
-    console.error("No hay sesión activa ", error);
+    console.error("No hay sesión activa ");
     window.location.href = "login.html";
   }
 });
