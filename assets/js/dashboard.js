@@ -1,6 +1,5 @@
 import { Usuario } from "./usuario.js";
 import { auth, db } from "./firebase-config.js";
-
 // Firebase: Validar sesión activa
 auth.onAuthStateChanged(user => {
   if (user) {
@@ -11,7 +10,13 @@ auth.onAuthStateChanged(user => {
     window.location.href = "login.html";
   }
 });
-
+// Firebase: Cerrar sesión
+document.getElementById("logoutBtn").addEventListener("click", () => {
+  auth.signOut().then(() => {
+    window.location.href = "index.html";
+  });
+});
+// Firebase: Cargar datos de Usuario Autenticado
 function cargarUsuario(uid) {
   db.collection("usuarios").doc(uid).get()
     .then((doc) => {
