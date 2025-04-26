@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="login-body">
-
   <div class="login-container">
     <h2>Acceder</h2>
     <form id="loginForm">
@@ -20,6 +19,38 @@
       <button>⬅️ Cancelar</button>
     </a>
   </div>
+  <div class="login-container-test">
+    <h2 style="grid-column: span 3;">Pruebas de Login</h2>
+    <div class="test-case" data-email="test01@grupo8nrc23730.com" data-password="t3st.01@" data-expected="✅ Pass">
+      <input type="checkbox" />
+      <p>🧑‍💻 <span class="email">correo@dominio.host</span></p>
+      <p>🔑 <span class="password">********</span></p>
+      <p>E: <span class="expected">❓</span></p>
+      <p>R: <span class="result">❓</span></p>
+      <p> <span class="error-code">❓</span></p>
+    </div>
+    <div class="test-case" data-email="test02@grupo8nrc23730.com" data-password="t3st.02@" data-expected="❌ Contraseña incorrecta">
+      <input type="checkbox" />
+      <p>🧑‍💻 <span class="email">correo@dominio.host</span></p>
+      <p>🔑 <span class="password">********</span></p>
+      <p>E: <span class="expected">❓</span></p>
+      <p>R: <span class="result">❓</span></p>
+      <p> <span class="error-code">❓</span></p>
+    </div>
+    <div class="test-case" data-email="test03@grupo8nrc23730.com" data-password="t3st.03@" data-expected="❌ Usuario no existe">
+      <input type="checkbox" />
+      <p>🧑‍💻 <span class="email">correo@dominio.host</span></p>
+      <p>🔑 <span class="password">********</span></p>
+      <p>E: <span class="expected">❓</span></p>
+      <p>R: <span class="result">❓</span></p>
+      <p> <span class="error-code">❓</span></p>
+    </div>
+    <div></div>
+    <div style="margin-top: 1rem;">
+      <button id="runTests">▶️ Probar</button>
+      <button id="resetTests">🔄 Reset</button>
+    </div>
+  </div>
 
   <!-- Firebase SDK -->
   <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
@@ -27,7 +58,7 @@
   <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
 
   <!-- Scripts separados -->
-  <script src="assets/js/firebase-config.js"></script>
-  <script src="assets/js/login.js"></script>
+  <script type="module" src="assets/js/login.js"></script>
+  <script type="module" src="assets/js/login.test.js"></script>
 </body>
 </html>

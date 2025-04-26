@@ -1,5 +1,5 @@
 // Firebase: Configuración
-const firebaseConfig = {
+export const firebaseConfig = {
     apiKey: "AIzaSyAkV2EhjdbpWQ_B4lpAcAqYkGvwl8u2zm4",
     authDomain: "portafolio-uc.firebaseapp.com",
     projectId: "portafolio-uc",
@@ -9,6 +9,5 @@ const firebaseConfig = {
 };
 // Firebase: Inicialización
 firebase.initializeApp(firebaseConfig);
-const auth = firebase.auth();
-const db = firebase.firestore();
-  
+export const auth = firebase.auth();
+export const db = firebase.firestore();

@@ -1,3 +1,4 @@
+import { auth } from "./firebase-config.js";
 // Firebase: Inicio de sesión
 document.getElementById("loginForm").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -12,12 +13,12 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     })
     .catch((error) => {
       let msg = "Ocurrió un error inesperado.";
-      if (error.code === 'auth/user-not-found') {
-        msg = "El usuario no existe.";
-      } else if (error.code === 'auth/wrong-password') {
-        msg = "Contraseña incorrecta.";
-      } else if (error.code === 'auth/invalid-credential') {
-        msg = "Credencial inválida o caducada.";
+      if (error.code === 'auth/invalid-credential') {
+        msg = "Usuario y/o contraseña incorrectos.";
+      } else if (error.code === 'auth/network-request-failed') {
+        msg = "Error de red. Verifica tu conexión.";
+      } else {
+        msg = "Otro error: ", error.code
       }
       document.getElementById("error").innerText = msg;
     });

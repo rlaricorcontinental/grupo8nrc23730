@@ -72,7 +72,7 @@
         <p>Has ingresado correctamente al área privada del portafolio.</p>
       </div>
       <div class="login-btn-container">
-        <button class="logout-btn" onclick="logout()">Cerrar Sesión</button>
+        <button class="logout-btn" id="logoutBtn">Cerrar Sesión</button>
       </div>
     </div>
   </header>
@@ -110,7 +110,6 @@
   <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
 
   <!-- Scripts separados -->
-  <script src="assets/js/firebase-config.js"></script>
-  <script src="assets/js/dashboard.js"></script>
+  <script type="module" src="assets/js/dashboard.js"></script>
 </body>
 </html>
