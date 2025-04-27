@@ -17,7 +17,7 @@ jobs:
           node-version: '18'
       - name: Ejecutar JS tests
         run: |
-          for f in test/*.test.js; do
+          for f in assets/js/test/*.test.js; do
             echo "Running $f"
             node $f
           done
