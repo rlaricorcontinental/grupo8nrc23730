@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - name: Run JS tests
+      - name: Ejecutar JS tests
         run: |
           for f in test/*.test.js; do
             echo "Running $f"
