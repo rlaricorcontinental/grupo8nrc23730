@@ -1,6 +1,4 @@
-/**
- * Firestore ORM Lite - Versión sin dependencias
- */
+// Firestore ORM Lite - Versión sin dependencias
 class FirestoreORM {
     constructor(collectionName) {
       this.collectionName = collectionName;

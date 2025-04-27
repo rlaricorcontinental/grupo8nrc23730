@@ -1,21 +1,18 @@
+// Conectar con Usuarios de Firestore
 class UsuarioModel {
   constructor() {
     this.orm = new FirestoreORM('usuarios');
   }
-  
-  // Métodos específicos para el modelo Usuario
+  // Métodos específicos
   async getUsuario(uid) {
     const data = await this.orm.getById(uid);
     return data ? new Usuario(data) : null;
   }
-  
   async updateUsuario(uid, data) {
     return this.orm.update(uid, data);
   }
-  
-  // Puedes añadir más métodos específicos aquí
 }
-
+// Clase Usuario (estructura y métodos)
 class Usuario {
   constructor(data) {
     this.UID = data.id;
@@ -35,20 +32,16 @@ class Usuario {
     };
     this.CodigoPostal = data.CodigoPostal || "-";
   }
-  
-  // Métodos de instancia (los mismos que ya tenías)
   NombreCompleto() {
     if (this.Nombres === "-" || this.Apellidos === "-") return "-";
     return `${this.Nombres} ${this.Apellidos}`;
   }
-  
   NombreApellido() {
     if (this.Nombres === "-" || this.Apellidos === "-") return "-";
     const primerNombre = this.Nombres.split(' ')[0];
     const primerApellido = this.Apellidos.split(' ')[0];
     return `${primerNombre} ${primerApellido}`;
   }
-  
   Edad() {
     if (!(this.FechaNacimiento instanceof Date)) return "-";
     const hoy = new Date();
@@ -60,7 +53,6 @@ class Usuario {
     }
     return edad;
   }
-  
   Residencia() {
     const l = this.LugarResidencia;
     if ([l.Distrito, l.Provincia, l.Departamento, l.Pais].includes("-")) return "-";

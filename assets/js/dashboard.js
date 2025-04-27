@@ -15,15 +15,33 @@ auth.onAuthStateChanged(user => {
     }
   }
 });
-
+// HTML: Activar/Desactivar (y guardar anexo) campos de edición 
+document.getElementById("editBtn").addEventListener("click", () => {
+  const editBtn = document.getElementById('editBtn');
+  const aEditar = editBtn.textContent === 'Editar';
+  if (aEditar) {
+    document.body.classList.add('editing');
+    editBtn.textContent = "Guardar"
+    document.getElementById("edit.Celular").value = document.getElementById("usuario.Celular").textContent;
+    document.getElementById("edit.CorreoPersonal").value = document.getElementById("usuario.CorreoPersonal").textContent;
+    document.getElementById("edit.CodigoPostal").value = document.getElementById("usuario.CodigoPostal").textContent;
+  } else {
+    document.body.classList.remove('editing');
+    editBtn.textContent = "Guardando..."
+    guardarUsuario(document.getElementById("usuario.UID").textContent, {
+      Celular: document.getElementById("edit.Celular").value,
+      CorreoPersonal: document.getElementById("edit.CorreoPersonal").value,
+      CodigoPostal: document.getElementById("edit.CodigoPostal").value
+    });
+  }
+});
 // Firebase: Cerrar sesión
 document.getElementById("logoutBtn").addEventListener("click", () => {
   auth.signOut().then(() => {
     window.location.href = "index.html";
   });
 });
-
-// Firebase: Cargar datos de Usuario Autenticado (versión con ORM)
+// Firebase y HTML: Cargar datos de Usuario Autenticado
 async function cargarUsuario(uid) {
   try {
     const usuario = await UsuarioActual.getUsuario(uid);
@@ -32,7 +50,6 @@ async function cargarUsuario(uid) {
       return;
     }
     console.log("Bienvenido", usuario.NombreApellido());
-    // Mostrar datos en la UI
     document.getElementById("usuario.NombreApellido").innerText = usuario.NombreApellido();
     document.getElementById("usuario.Nombres").innerText = usuario.Nombres;
     document.getElementById("usuario.Apellidos").innerText = usuario.Apellidos;
@@ -50,7 +67,25 @@ async function cargarUsuario(uid) {
     console.error("Error al obtener los datos del usuario:", error);
   }
 }
-
+// Firebase: Guardar datos de Usuario Autenticado
+async function guardarUsuario(uid, aActualizar) {
+  try {
+    const actualizar = await UsuarioActual.updateUsuario(uid, aActualizar);
+    if (!actualizar) {
+      throw new Error("Error: Actualización fallida");
+    }
+    document.getElementById("usuario.Celular").textContent = aActualizar.Celular;
+    document.getElementById("usuario.CorreoPersonal").textContent = aActualizar.CorreoPersonal;
+    document.getElementById("usuario.CodigoPostal").textContent = aActualizar.CodigoPostal;
+    console.log("Usuario Actualizado");
+  } catch (error) {
+    console.error("Error al actualizar:", error);
+  } finally {
+    const editBtn = document.getElementById("editBtn");
+    editBtn.textContent = "Editar";
+    editBtn.disabled = false;
+  }
+}
 // Función auxiliar para formatear fecha
 function formatDate(date) {
   if (!date || date === "-") return "-";
@@ -64,8 +99,7 @@ function formatDate(date) {
     return "-";
   }
 }
-
-// Función TDD (sin cambios)
+// Función TDD
 function tddDatosMostrarResultados(activo, alternativo) {
   if (activo) {
     document.getElementById("tdd.Escenario").innerText = "2: Usuario Autenticado";
