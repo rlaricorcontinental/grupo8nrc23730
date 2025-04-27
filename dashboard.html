@@ -70,6 +70,12 @@
       <div class="header-text">
         <h1>👋 ¡¡Bienvenido <span id="usuario.NombreApellido">Cargando...</span> !!</h1>
         <p>Has ingresado correctamente al área privada del portafolio.</p>
+        <h2>TDD: Carga de datos de usuario en Dashboard</h2>
+        <p><strong>Escenario <span id="tdd.Escenario"></span></strong></p>
+        <p><strong>R. Esperado: </strong><span id="tdd.Esperado"></span></p>
+        <p><strong>Resultado: </strong><span id="tdd.Resultado"></span></p>
+        <p><strong>Test: </strong><span id="tdd.Test"></span></p>
+        <p><strong>Cierre: </strong><span id="tdd.Cierre"></span></p>
       </div>
       <div class="login-btn-container">
         <button class="logout-btn" id="logoutBtn">Cerrar Sesión</button>
@@ -109,7 +115,12 @@
   <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
 
-  <!-- Scripts separados -->
-  <script type="module" src="assets/js/dashboard.js"></script>
+  <!-- Configuración -->
+  <script src="assets/js/firebase-config.js"></script>
+  <script src="assets/js/firestore-orm.js"></script>
+  <script src="assets/js/usuario.js"></script>
+
+  <!-- Script principal -->
+  <script src="assets/js/dashboard.js"></script>
 </body>
 </html>

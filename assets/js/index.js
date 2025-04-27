@@ -1,4 +1,3 @@
-import { auth } from "./firebase-config.js";
 // Firebase: Validar sesión activa
 auth.onAuthStateChanged((user) => {
     const loginBtn = document.querySelector('.login-btn');

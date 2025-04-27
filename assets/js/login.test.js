@@ -1,4 +1,3 @@
-import { authTest } from "./firebase-config.test.js";
 // HTML: Cargar Datos Iniciales
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".test-case").forEach((test) => {
@@ -25,7 +24,7 @@ document.getElementById("runTests").addEventListener("click", () => {
       // Firebase: Validar Usuario
       authTest.signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
-        console.log("Test login exitoso:", email);
+        console.log("Test login exitoso:", userCredential.user.email);
         resultSpan.textContent = "✅ Pass";
         errorCodeSpan.textContent = "-";
       })

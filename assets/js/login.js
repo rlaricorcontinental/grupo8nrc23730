@@ -1,4 +1,3 @@
-import { auth } from "./firebase-config.js";
 // Firebase: Inicio de sesión
 document.getElementById("loginForm").addEventListener("submit", function (e) {
   e.preventDefault();

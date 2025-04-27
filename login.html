@@ -29,7 +29,7 @@
       <p>R: <span class="result">❓</span></p>
       <p> <span class="error-code">❓</span></p>
     </div>
-    <div class="test-case" data-email="test02@grupo8nrc23730.com" data-password="t3st.02@" data-expected="❌ Contraseña incorrecta">
+    <div class="test-case" data-email="test02@grupo8nrc23730.com" data-password="t3st.20@" data-expected="❌ Contraseña incorrecta">
       <input type="checkbox" />
       <p>🧑‍💻 <span class="email">correo@dominio.host</span></p>
       <p>🔑 <span class="password">********</span></p>
@@ -37,7 +37,7 @@
       <p>R: <span class="result">❓</span></p>
       <p> <span class="error-code">❓</span></p>
     </div>
-    <div class="test-case" data-email="test03@grupo8nrc23730.com" data-password="t3st.03@" data-expected="❌ Usuario no existe">
+    <div class="test-case" data-email="test03@gmail.com" data-password="t3st.03@" data-expected="❌ Usuario no existe">
       <input type="checkbox" />
       <p>🧑‍💻 <span class="email">correo@dominio.host</span></p>
       <p>🔑 <span class="password">********</span></p>
@@ -57,8 +57,12 @@
   <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
 
-  <!-- Scripts separados -->
-  <script type="module" src="assets/js/login.js"></script>
-  <script type="module" src="assets/js/login.test.js"></script>
+  <!-- Configuración -->
+  <script src="assets/js/firebase-config.js"></script>
+  <script src="assets/js/firebase-config.test.js"></script>
+
+  <!-- Script principal -->
+  <script src="assets/js/login.js"></script>
+  <script src="assets/js/login.test.js"></script>
 </body>
 </html>
